@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f6ba4c3c277ab942b579cb72a3bbc0b, type: 3}
+  m_Name: WeaponsConfig
+  m_EditorClassIdentifier: 
+  _weapons:
+  - Type: 1
+    Prefab: {fileID: 3355770973740031914, guid: 95b170a39d67f104dbe28768f6b09f6d, type: 3}
+    ProjectileType: 1
+  - Type: 2
+    Prefab: {fileID: 3355770973740031914, guid: ebde9d9d73e693846b9fce5f21a117a4, type: 3}
+    ProjectileType: 1
+  _projectiles:
+  - Type: 1
+    Prefab: {fileID: 6279359608590139723, guid: 356f35039ac766d4f83b62eb79f12d84, type: 3}
+  _defaultWeapons:
+  - ShipType: 100
+    WeaponType: 1
+  - ShipType: 1000
+    WeaponType: 1
+  - ShipType: 1001
+    WeaponType: 1
+  - ShipType: 1002
+    WeaponType: 1
