@@ -56,10 +56,12 @@ namespace SpaceInvaders.Gameplay.Accessors {
             if (_enemyShips != null) {
                 foreach (var row in _enemyShips) {
                     foreach (var ship in row) {
-                        var health = ship.GetComponentInChildren<IShipHealth>();
-                        if (health != null) {
-                            health.OnDeath -= ProcessShipDestroyed;
-                            health.OnDeath += ProcessShipDestroyed;
+                        if (ship != null) {
+                            var health = ship.GetComponentInChildren<IShipHealth>();
+                            if (health != null) {
+                                health.OnDeath -= ProcessShipDestroyed;
+                                health.OnDeath += ProcessShipDestroyed;
+                            }
                         }
                     }
                 }
@@ -70,9 +72,11 @@ namespace SpaceInvaders.Gameplay.Accessors {
             if (_enemyShips != null) {
                 foreach (var row in _enemyShips) {
                     foreach (var ship in row) {
-                        var health = ship.GetComponentInChildren<IShipHealth>();
-                        if (health != null) {
-                            health.OnDeath -= ProcessShipDestroyed;
+                        if (ship != null) {
+                            var health = ship.GetComponentInChildren<IShipHealth>();
+                            if (health != null) {
+                                health.OnDeath -= ProcessShipDestroyed;
+                            }
                         }
                     }
                 }
