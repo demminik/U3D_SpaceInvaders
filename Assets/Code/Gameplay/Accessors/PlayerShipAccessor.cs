@@ -21,7 +21,6 @@ namespace SpaceInvaders.Gameplay.Accessors {
             }
         }
 
-        // TODO: call
         public void Dispose() {
             PlayerShip = null;
             OnShipDestroyed = null;

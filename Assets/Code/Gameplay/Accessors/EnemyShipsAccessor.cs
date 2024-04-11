@@ -28,7 +28,6 @@ namespace SpaceInvaders.Gameplay.Accessors {
 
         public event Action<Ship> OnShipDestroyed;
 
-        // TODO: call
         public void Dispose() {
             EnemyShips = null;
             OnShipDestroyed = null;
